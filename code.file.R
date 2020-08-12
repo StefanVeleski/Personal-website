@@ -12,3 +12,4 @@ blogdown::new_site(theme = "gcushen/hugo-academic")
 #dns3.p03.nsone.net
 #dns4.p03.nsone.net
 blogdown::serve_site()
+file.create("netlify.toml")
