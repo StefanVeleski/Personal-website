@@ -29,12 +29,15 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/StefanVeleski
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.com/citations?user=Jxie_8gAAAAJ&hl=en&oi=ao
 - icon: github
   icon_pack: fab
   link: https://github.com/StefanVeleski
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=Jxie_8gAAAAJ&hl=en&oi=ao
+- icon: ac
+  icon_pack: fab
+  link: https://orcid.org/0000-0002-6097-0864
 superuser: true
 title: Stefan Veleski
 user_groups:
