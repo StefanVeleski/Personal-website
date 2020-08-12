@@ -35,8 +35,11 @@ social:
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=Jxie_8gAAAAJ&hl=en&oi=ao
-- icon: ac
-  icon_pack: fab
+- icon: researchgate
+  icon_pack: ai
+  link: https://www.researchgate.net/profile/Stefan_Veleski?ev=hdr_xprf&_sg=XGA2GNmORop1Y91RZsLmlDNXxFjXldqx_jnwafZLtthPmghCOA_TyhwAefTBefrw3fdfQcmQ7YnoWskvyZoZn6e6
+- icon: orcid
+  icon_pack: ai
   link: https://orcid.org/0000-0002-6097-0864
 superuser: true
 title: Stefan Veleski
