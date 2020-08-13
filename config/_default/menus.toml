@@ -19,7 +19,7 @@
   weight = 40
 
 [[main]]
-  name = "Courses"
+  name = "Presentations"
   url = "courses/"
   weight = 50
   
@@ -28,11 +28,11 @@
 [[main]]
   name = "CV"
   url = "media/cv.pdf"
-  weight = 70
+  weight = 60
 
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 60
+  weight = 70
 
 
