@@ -9,24 +9,24 @@ organizations:
   url: "https://www.muni.cz/en"
 role: Doctoral student in English literature
 
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+#bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Cultural evolution
+- Biocultural criticism
+- Cultural longevity and success
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: PhD in English Literature
+    institution: Masaryk Univesity, Brno
+    year: 2017-present
+  - course: MA in English Literature
+    institution: Masaryk Univesity, Brno
+    year: 2015-2017
+  - course: BA in English Language and Literature
+    institution: Ss. Cyril and Methodius University, Skopje
+    year: 2010-2014
     
 social:
 - icon: envelope
