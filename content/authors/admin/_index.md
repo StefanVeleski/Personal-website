@@ -1,23 +1,23 @@
 ---
 authors:
 - admin
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
-education:
-  courses:
-  - course: PhD in English Literature
-    institution: Masaryk University, Brno
-    year: 2017-present
-  - course: MA in English Literature
-    institution: Masaryk University, Brno
-   year: 2015-2017
- - course: BA in English Language and Literature
-    institution: Ss. Cyril and Methodius University, Skopje
-    year: 2010-2014
-email: ""
-interests:
-- Cultural evolution
-- Biocultural criticism
-- Cultural longevity and success
+#bio: My research interests include distributed robotics, mobile computing and programmable matter.
+#education:
+#  courses:
+#  - course: PhD in Artificial Intelligence
+#    institution: Stanford University
+#    year: 2012
+#  - course: MEng in Artificial Intelligence
+#    institution: Massachusetts Institute of Technology
+#   year: 2009
+#  - course: BSc in Artificial Intelligence
+#    institution: Massachusetts Institute of Technology
+#    year: 2008
+#email: ""
+#interests:
+#- Artificial Intelligence
+#- Computational Linguistics
+#- Information Retrieval
 organizations:
 - name: Masaryk University
   url: "https://www.muni.cz/en"
