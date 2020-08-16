@@ -13,7 +13,7 @@ education:
  - course: BA in English Language and Literature
     institution: Ss. Cyril and Methodius University, Skopje
     year: 2010-2014
-#email: ""
+email: ""
 interests:
 - Cultural evolution
 - Biocultural criticism
@@ -22,7 +22,6 @@ organizations:
 - name: Masaryk University
   url: "https://www.muni.cz/en"
 role: Doctoral student in English literature
-url: "https://www.muni.cz/en/people/448328-stefan-veleski"
 social:
 - icon: envelope
   icon_pack: fas
