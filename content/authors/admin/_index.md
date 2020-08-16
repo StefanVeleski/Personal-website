@@ -2,26 +2,27 @@
 authors:
 - admin
 #bio: My research interests include distributed robotics, mobile computing and programmable matter.
-#education:
-#  courses:
-#  - course: PhD in Artificial Intelligence
-#    institution: Stanford University
-#    year: 2012
-#  - course: MEng in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#   year: 2009
-#  - course: BSc in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2008
+education:
+  courses:
+  - course: PhD in English Literature
+    institution: Masaryk University, Brno
+    year: 2017-present
+  - course: MA in English Literature
+    institution: Masaryk University, Brno
+   year: 2015-2017
+ - course: BA in English Language and Literature
+    institution: Ss. Cyril and Methodius University, Skopje
+    year: 2010-2014
 #email: ""
-#interests:
-#- Artificial Intelligence
-#- Computational Linguistics
-#- Information Retrieval
+interests:
+- Cultural evolution
+- Biocultural criticism
+- Cultural longevity and success
 organizations:
 - name: Masaryk University
   url: "https://www.muni.cz/en"
 role: Doctoral student in English literature
+url: "https://www.muni.cz/en/people/448328-stefan-veleski"
 social:
 - icon: envelope
   icon_pack: fas
