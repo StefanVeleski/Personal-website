@@ -10,7 +10,7 @@ title = "Stefan Veleski"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "https://stefanveleski.com/"
+baseURL = "https://stefanveleski.com/"
 
 # Enter a copyright notice to display in the site footer.
 # To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
@@ -19,10 +19,6 @@ copyright = "{year}"
 ############################
 ## Advanced options below ##
 ############################
-# Perhaps this is needed
-npm install
-npm run make:prepare
-HUGO_VERSION=0.73.4 npm run serve
 
 # Name of Academic theme folder in `themes/`.
 theme = "hugo-academic"
