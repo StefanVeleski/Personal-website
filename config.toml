@@ -19,6 +19,10 @@ copyright = "{year}"
 ############################
 ## Advanced options below ##
 ############################
+# Perhaps this is needed
+npm install
+npm run make:prepare
+HUGO_VERSION=0.73.4 npm run serve
 
 # Name of Academic theme folder in `themes/`.
 theme = "hugo-academic"
