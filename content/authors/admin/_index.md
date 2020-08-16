@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-#bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include distributed robotics, mobile computing and programmable matter.
 education:
 courses:
 - course: PhD in Artificial Intelligence
@@ -13,7 +13,7 @@ courses:
 - course: BSc in Artificial Intelligence
     institution: Massachusetts Institute of Technology
     year: 2008
-#email: ""
+email: ""
 interests:
 - Artificial Intelligence
 - Computational Linguistics
