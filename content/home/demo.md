@@ -14,5 +14,6 @@ subtitle = ""
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns = "1"
+My CV is available here (last updated on August 17, 2020)
 
 +++
