@@ -15,4 +15,4 @@ weight = 60
 
 +++
 
-My CV is available [here](static/media/cv.pdf). (Last updated: August 17, 2020)
+My CV is available [here](C:/Users/Stefan/Documents/GitHub/Personal-website/static/media/cv.pdf). (Last updated: August 17, 2020)
