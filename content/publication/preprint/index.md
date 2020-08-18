@@ -17,7 +17,7 @@ projects:
 publication: "Evolutionary Studies in Imaginative Culture"
 publication_short: ""
 publication_types:
-- "3"
+- "2"
 publishDate: "2020-05-05T00:00:00Z"
 slides: example
 summary: A review article of The Science of Storytelling by Will Storr and The Science of Screenwriting by Paul Joseph Gulino and Connie Shears, where I argue that these two recent science-heavy how-to fiction writing manuals may signal a scientific turn in the genre.
