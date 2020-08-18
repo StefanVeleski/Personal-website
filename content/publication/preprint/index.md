@@ -3,7 +3,7 @@ abstract: The last two years have seen the publication of two books in the genre
 authors:
 - admin
 date: "2020-08-18T00:00:00Z"
-doi: "10.26613/esic.4.1.173"
+doi: ""
 featured: false
 image:
   caption: ''
@@ -14,7 +14,7 @@ links:
   url: https://www.jstor.org/stable/10.26613/esic.4.1.173?seq=1
 projects:
 - internal-project
-publication: "Evolutionary Studies in Imaginative Culture"
+publication: "Veleski, Stefan. “A Scientific Turn in the Genre of How-to Fiction Writing Manuals?” Evolutionary Studies in Imaginative Culture, vol. 4, no. 1, 2020, pp. 91–104."
 publication_short: ""
 publication_types:
 - "2"
