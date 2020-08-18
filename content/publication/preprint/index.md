@@ -14,7 +14,7 @@ links:
   url: https://www.jstor.org/stable/10.26613/esic.4.1.173?seq=1
 projects:
 - internal-project
-publication: "Veleski, Stefan. “A Scientific Turn in the Genre of How-to Fiction Writing Manuals?” Evolutionary Studies in Imaginative Culture, vol. 4, no. 1, 2020, pp. 91–104."
+publication: "Evolutionary Studies in Imaginative Culture, vol. 4, no. 1, pp. 91–104."
 publication_short: ""
 publication_types:
 - "2"
