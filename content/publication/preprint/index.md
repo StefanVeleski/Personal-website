@@ -20,7 +20,7 @@ publication_types:
 - "3"
 publishDate: "2020-05-05T00:00:00Z"
 slides: example
-summary: The Science of Storytelling by Will Storr and The Science of Screenwriting by Paul Joseph Gulino and Connie Shears are two recent science heavy how-to fiction writing manuals which could signal a scientific turn in the genre.
+summary: A review article of The Science of Storytelling by Will Storr and The Science of Screenwriting by Paul Joseph Gulino and Connie Shears, where I argue that these two recent science-heavy how-to fiction writing manuals may signal a scientific turn in the genre.
 tags:
 - Source Themes
 title: A Scientific Turn in the Genre of How-to Fiction Writing Manuals? 
