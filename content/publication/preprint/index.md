@@ -10,7 +10,7 @@ image:
   focal_point: ""
   preview_only: false
 links:
-- name: Custom Link
+- name: JSTOR link
   url: https://www.jstor.org/stable/10.26613/esic.4.1.173?seq=1
 projects:
 - internal-project
@@ -33,9 +33,4 @@ url_slides: ""
 url_source: ''
 url_video: ''
 ---
-
-#{{% alert note %}}
-#Click the *Slides* button above to demo Academic's Markdown slides feature.
-#{{% /alert %}}
-
 
