@@ -1,32 +1,52 @@
 ---
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+The aim of the thesis is to provide an overview of three contemporary action films:
+Dredd 3D, John Wick, and Mad Max: Fury Road, through a so-called "bio-structuralist"
+approach - combining archetypal criticism, literary Darwinism, and narratology, into a unified,
+holistic theoretical model.
+The thesis is divided in four main parts: (1) an introduction, that gives a rationale for the
+aim, scope, and the design of the thesis, (2) a theoretical framework, which provides both an
+overview of the theories and fits them in the general model, (3) a part including the case studies,
+that puts the theoretical approach to the test, and finally (4) a conclusion that gives a verdict on
+the feasibility of the model and summarizes the findings.
+A particular emphasis is put on the monomyth as a story paradigm that all the films in the
+case studies share, whose combination of a biologically dictated scaffolding, and cultural
+brickwork, is an excellent testing ground for the theoretical model.
+In addition to the attempts of revealing glimpses of our evolved nature in the plots,
+narrative conventions, cinematography, themes, motivations, settings, and character networks in
+the films, the thesis attempts to balance the hardliner literary Darwinist stance of the dominance
+of biology over culture, with an acknowledgement of the existence of cultural transmission and
+stylistic evolution. Thus, the thesis proposes terminology that differentiates between cultural
+units totally dominated by biology, partially tied to it, and completely independent of it, albeit
+spread in ways reminiscent of biological evolution.
+The proposed theoretical model is shown to be a viable alternative to post-structuralist
+approaches as far as the study of action cinema is concerned, with its ample scope serving as its
+principal advantage.
 author_notes:
-- Equal contribution
-- Equal contribution
 authors:
 - admin
-- Robert Ford
-date: "2015-09-01T00:00:00Z"
+
+date: "2020-8-19T00:00:00Z"
 doi: ""
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  caption: 'One of the crazier scenes from Mad Max: Fury Road'
   focal_point: ""
   preview_only: false
 projects: []
-publication: '*Journal of Source Themes, 1*(1)'
+publication: 'Master's Thesis. Department of English and American Studies. Masaryk University.'
 publication_short: ""
 publication_types:
-- "2"
-publishDate: "2017-01-01T00:00:00Z"
+- "7"
+publishDate: "2017-05-01T00:00:00Z"
 slides: example
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: Bio
 tags:
 - Source Themes
-title: An example journal article
+title: A Structural Approach to the Monomyth in
+Contemporary Action Cinema: Dredd, John Wick and Mad Max: Fury Road
 url_code: ""
 url_dataset: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_pdf: https://is.muni.cz/th/ldvqx/MA_Thesis__Stefan_Veleski__448328.pdf
 url_poster: ""
 url_project: ""
 url_slides: ""
@@ -34,12 +54,4 @@ url_source: ""
 url_video: ""
 ---
 
-{{% alert note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /alert %}}
 
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
-{{% /alert %}}
-
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
