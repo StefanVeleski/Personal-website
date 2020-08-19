@@ -11,7 +11,8 @@ image:
   caption: 'One of the crazier scenes from Mad Max: Fury Road'
   focal_point: ""
   preview_only: false
-projects: []
+projects: 
+- internal-project
 publication: 'Master's Thesis. Department of English and American Studies. Masaryk University.'
 publication_short: ""
 publication_types:
