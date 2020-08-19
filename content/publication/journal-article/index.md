@@ -1,5 +1,5 @@
 ---
-abstract: The aim of the thesis is to provide an overview of three contemporary action films:
+abstract: The aim of the thesis is to provide an overview of three contemporary action films,
 Dredd 3D, John Wick, and Mad Max: Fury Road, through a so-called "bio-structuralist"
 approach - combining archetypal criticism, literary Darwinism, and narratology, into a unified,
 holistic theoretical model.
