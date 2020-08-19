@@ -22,7 +22,8 @@ publishDate: "2017-05-01T00:00:00Z"
 slides:
 summary: This is my M.A. thesis, where I argue that the structure of the Monomyth is predominately shaped by biological imperatives which make it inherently attractive and widespread in cultural production—-in this case contemporary action cinema.
 tags:
-title: A Structural Approach to the Monomyth in Contemporary Action Cinema: Dredd, John Wick and Mad Max: Fury Road
+- Source Themes
+title: A Structural Approach to the Monomyth in Contemporary Action Cinema: Dredd, John Wick, and Mad Max: Fury Road
 url_code: ''
 url_dataset: ''
 url_pdf: 'https://is.muni.cz/th/ldvqx/MA_Thesis__Stefan_Veleski__448328.pdf'
