@@ -1,5 +1,5 @@
 ---
-The aim of the thesis is to provide an overview of three contemporary action films:
+abstract: The aim of the thesis is to provide an overview of three contemporary action films:
 Dredd 3D, John Wick, and Mad Max: Fury Road, through a so-called "bio-structuralist"
 approach - combining archetypal criticism, literary Darwinism, and narratology, into a unified,
 holistic theoretical model.
@@ -38,12 +38,11 @@ publication_short: ""
 publication_types:
 - "7"
 publishDate: "2017-05-01T00:00:00Z"
-slides: example
-summary: Bio
+slides: 
+summary: In this M.A. thesis I argue that the structure of the Monomyth is to a large extent shaped by biocultural imperatives which make it inherently attractive and widespread in cultural production—-in this case contemporary action cinema.
 tags:
 - Source Themes
-title: A Structural Approach to the Monomyth in
-Contemporary Action Cinema: Dredd, John Wick and Mad Max: Fury Road
+title: A Structural Approach to the Monomyth in Contemporary Action Cinema: Dredd, John Wick and Mad Max: Fury Road
 url_code: ""
 url_dataset: ""
 url_pdf: https://is.muni.cz/th/ldvqx/MA_Thesis__Stefan_Veleski__448328.pdf
