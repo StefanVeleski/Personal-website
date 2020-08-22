@@ -34,7 +34,7 @@ title: 'Academic: the website builder for Hugo'
 - 🐦 Twitter: [@source_themes](https://twitter.com/source_themes) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithAcademic](https://twitter.com/search?q=%23MadeWithAcademic&src=typd)
 - 💡 [Request a **feature** or report a **bug**](https://github.com/gcushen/hugo-academic/issues)
 - ⬆️ **Updating?** View the [Update Guide](https://sourcethemes.com/academic/docs/update/) and [Release Notes](https://sourcethemes.com/academic/updates/)
-- :heart: **Support development** of Academic:
+- ❤️ **Support development** of Academic:
   - ☕️ [**Donate a coffee**](https://paypal.me/cushen)
   - 💵 [Become a backer on **Patreon**](https://www.patreon.com/cushen)
   - 🖼️ [Decorate your laptop or journal with an Academic **sticker**](https://www.redbubble.com/people/neutreno/works/34387919-academic)
