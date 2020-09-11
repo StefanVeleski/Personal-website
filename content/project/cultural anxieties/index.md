@@ -10,7 +10,7 @@ links:
   name: Follow on Research Gate
   url: https://researchgate.net
 slides: 
-summary: An example of using the in-built project page.
+summary: What do cultural evolution and biocultural criticism have to say about the effect of cultural phenomena on cultural production?
 tags:
 - Side projects
 title: Cultural anxieties in cultural production

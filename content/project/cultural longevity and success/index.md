@@ -10,7 +10,7 @@ links:
   name: Follow on Research Gate
   url: https://researchgate.net
 slides:
-summary: An example of using the in-built project page.
+summary: Why do some cultural products linger in our collective memory longer than others?
 tags:
 - Dissertation research
 title: Cultural longevity and success
