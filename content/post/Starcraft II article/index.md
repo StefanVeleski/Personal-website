@@ -17,5 +17,4 @@ summary: Create a beautifully simple website in under 10 minutes.
 tags:
 title: 'Social and Individual Learning in Starcraft 2'
 ---
-
-![Starcraft image]()
+# Heading

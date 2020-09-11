@@ -9,7 +9,7 @@ links:
   icon_pack: ai
   name: Follow on Research Gate
   url: https://researchgate.net
-slides: example
+slides: 
 summary: An example of using the in-built project page.
 tags:
 - Side projects
