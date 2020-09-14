@@ -10,7 +10,7 @@ all_day: true
 authors: []
 date: "2018-010-25T13:00:00Z"
 date_end: "2018-010-26T13:00:00Z"
-event: Aftermath : The Fall and the Rise After the Event
+event: "Aftermath: The Fall and the Rise After the Event"
 event_url: https://aftermathconference.wordpress.com/
 featured: false
 image:
