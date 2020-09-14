@@ -18,7 +18,7 @@ image:
   caption: 'Image by Ohmydearlife from Pixabay'
   focal_point: Right
 links:
-location:
+location: Madrid
 math: true
 projects:
 - Side projects
