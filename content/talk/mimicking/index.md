@@ -1,7 +1,7 @@
 ---
 abstract: Hypothetical encounters between humans and alien civilizations have been a hallmark of science fiction since the inception of the genre. However, the accompanying transformation of human society in these narratives has been largely neglected in critical analyses, especially by those that fit under the "cognitive" moniker. This paper fills this gap, by comparing how the aftermath of first contact is treated in novels by the "Big Three" of mid-twentieth century science fiction - Clarke (Childhood's End), Asimov (The Gods Themselves), and Heinlein (Stranger in a Strange Land). The paper argues that the stucture of first contact in these narratives is deliberately crafted to appeal to both contemporary cultural (mainly Cold War related) anxieties, and to hard-wired biological biases. The upshot of first contact in these novels is always hyper sociality — for better or worse. In addition, their success hinges on the depiction of a post humanist perspective — focusing either on aliens or on "altered" humans. In order to show the emotional valence of the post-event transformation of humanity, the paper features a "lightweight" sentiment analysis, using Matthew Jockers' "syuzhet" package.
 address:
-  city: Krakow
+  city: 
   country: Poland
   postcode:
   region:
