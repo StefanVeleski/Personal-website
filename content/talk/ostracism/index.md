@@ -18,13 +18,13 @@ image:
   caption: 'Image by Ohmydearlife from Pixabay'
   focal_point: Right
 links:
-location: Madrid
+location: Madrid, Spain
 math: true
 projects:
 - Side projects
 publishDate: "2020-09-14T00:00:00Z"
 slides: 
-summary: Films featuring ostracism often display striking similarities, despite the different sociocultural milieu they were published in. In this presentation I offer a biocultural explanation for these similarities—the filmmakers deliberately craft their films so as to pander to both the cultural background and biological imperatives of the audience.
+summary: Films featuring ostracism often display striking similarities, despite the different sociocultural milieu they were released in. In this presentation I offer a biocultural explanation for these similarities—the filmmakers deliberately craft their films so as to pander to both the cultural background and biological imperatives of the audience.
 tags: 
 title: "Ostracism on Film: Visualizing 'Social Death'"
 url_code: ""
