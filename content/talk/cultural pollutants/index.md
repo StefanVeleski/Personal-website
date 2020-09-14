@@ -24,7 +24,7 @@ projects:
 publishDate: "2020-09-14T00:00:00Z"
 slides: 
 summary: The popularity of late Victorian novels in the present day is characterized by extreme inequality. This paper tests the hypothesis that some novels that were bestsellers upon publication failed to linger in the collective memory of subsequent generations of readers due to "cultural pollutants", or "transmission blockers" — elements of the text filled with contemporary context that hinder the cultural transmission of the novels across time. 
-tags: 
+tags: ""
 title: ""Doomed" from the Start : The Role of "Cultural Pollutants" in the "Cultural Death" of Late Victorian Bestsellers"
 url_code: ""
 url_pdf: ""
