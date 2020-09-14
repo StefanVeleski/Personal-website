@@ -25,7 +25,7 @@ publishDate: "2020-9-14T00:00:00Z"
 slides: 
 summary: First contact narratives in mid-20th century science fiction were not only commonplace, but displayed certain similarities. I argue that the interplay between Cold War cultural anxieties and certain cognitive biases contributed towards the popularity of a unique variation of the first contact trope.
 tags: 
-title: "Mimicking the Other: The Aftermath of First Contact in Mid-20th Century Science iction Novels"
+title: "Mimicking the Other: The Aftermath of First Contact in Mid-20th Century Science Fiction Novels"
 url_code: ""
 url_pdf: ""
 url_slides: ""
