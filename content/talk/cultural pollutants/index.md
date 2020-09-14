@@ -31,4 +31,4 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 ---
-Presentation slides available upon request! I am currently trying to rerun some of the analyses of this paper using additional data and fit it in my dissertation. I am open for any suggestions, especially for other "cultural pollutants" or "transmission blockers", and how these can be "operationalized". 
+Presentation slides available upon request! I am currently trying to rerun some of the analyses of this paper using additional data and fit it in my dissertation. I am open for any suggestions, especially for other "cultural pollutants" or "transmission blockers", and how these can be "operationalized".
