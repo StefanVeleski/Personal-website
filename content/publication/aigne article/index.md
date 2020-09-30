@@ -4,7 +4,7 @@ abstract: Despite being a hallmark of science fiction since the inception of the
 authors:
 - admin
 date: "2020-09-30T00:00:00Z"
-doi: "10.6084/m9.figshare.13026431"
+doi: ""
 featured: false
 image:
   caption: 'Image by Kei Rothblack from Pixabay'
