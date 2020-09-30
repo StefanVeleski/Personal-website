@@ -1,35 +1,32 @@
 ---
-abstract: Despite being a hallmark of science fiction since the inception of the genre, narratives that feature first contact scenarios between humans and alien civilizations became particularly popular in the middle of the twentieth century. Critical analyses have long neglected the uniqueness of first contact narratives in this period, especially their clear ‘mentorship-like’ rather than ‘invasionlike' nature and the invariable transformation of humanity that follows the event. This article attempts to fill this gap in the research by comparing how the aftermath of first contact is treated in novels by the ‘Big Three’ of science fiction: Arthur C. Clarke (Childhood's End, 1953), Robert A. Heinlein (Stranger in a Strange Land, 1961), and Isaac Asimov (The Gods Themselves, 1972). The article argues that the structure of first contact in these narratives is deliberately crafted to appeal to both contemporary cultural (mainly Cold War related) anxieties, and to hard-wired biological biases. In each of the novels discussed, this transformation sees humanity, through various means, become more like the aliens. This change results in a type of hyper-sociality, which can be viewed in a positive or negative light depending on the narrative context, the conflicting attitudes towards communality and individualism, and the contemporary zeitgeist of the Cold War. In addition to a close reading of the three texts, the article also employs a sentiment analysis, with the help of Matthew Jockers’ ‘syuzhet’ package, in order to uncover the emotional valence of the transformation underlying the trope.
-
+abstract: The last two years have seen the publication of two books in the genre of how-to fiction writing manuals that use science both as a selling point and as a genuine analytical paradigm. The Science of Storytelling by Will Storr and The Science of Screenwriting by Paul Joseph Gulino and Connie Shears use insights from the cognitive sciences and evolutionary psychology, while retaining their practical, how-to character. This review article goes through some of the main clusters of advice shared by the two books, dealing with information processing, attention allocation, the implications of human sociality for fiction, and story structure, while fitting their takes on these issues within the fields of biocultural criticism and cultural evolution. Despite containing occasional flaws and confusions about theory common in pioneering works, these books could be harbingers of change for the genre and an important step in the bottom-up infusion of biocultural theory into literary studies.
 authors:
 - admin
-date: "2020-09-30T00:00:00Z"
-doi: "10.6084/m9.figshare.13026431"
+date: "2020-08-18T00:00:00Z"
+doi: ""
 featured: false
 image:
   caption: ''
   focal_point: ""
   preview_only: false
 links:
-- name: Link
-  url: http://aigne.ucc.ie/index.php/aigne/article/view/1552
+- name: JSTOR link
+  url: https://www.jstor.org/stable/10.26613/esic.4.1.173?seq=1
 projects:
 - internal-project
-publication: "Aigne, vol. 8, pp. 84-106."
+publication: "Evolutionary Studies in Imaginative Culture, vol. 4, no. 1, pp. 91–104."
 publication_short: ""
 publication_types:
 - "2"
-publishDate: "2020-09-30T00:00:00Z"
+publishDate: "2020-05-05T00:00:00Z"
 slides:
-summary: An article exploring the trope of post first contact transformation prevalent in mid twentieth century science fiction. The article uses a mixed method of close reading and sentiment analysis, guided by insight from cultural evolution and biocultural criticism.
-
+summary: A review article of The Science of Storytelling by Will Storr and The Science of Screenwriting by Paul Joseph Gulino and Connie Shears, where I argue that these two recent science-heavy how-to fiction writing manuals may signal a scientific turn in the genre.
 tags:
 
-title: Crisis and Transformation: The Aftermath of First Contact in Three
-Mid-20th Century Science Fiction Novels 
+title: A Scientific Turn in the Genre of How-to Fiction Writing Manuals? 
 url_code: ''
 url_dataset: ''
-url_pdf: 'http://aigne.ucc.ie/index.php/aigne/article/view/1552/1518'
+url_pdf: ''
 url_poster: ''
 url_project: ""
 url_slides: ""
