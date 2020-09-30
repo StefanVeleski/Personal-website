@@ -31,4 +31,4 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 ---
-Presentation slides available upon request! This paper was revised, expanded, and submitted as a journal article to Aigne, the postgraduate journal of the College of Arts, Celtic Studies and Social Sciences at University College Cork. It was published in its 8th, 2020 issue, available in its entirety here. 
+Presentation slides available upon request! This paper was revised, expanded, and submitted as a [journal article](https://stefanveleski.com/publication/aigne-article/) to Aigne, the postgraduate journal of the College of Arts, Celtic Studies and Social Sciences at University College Cork. It was published in its 8th, 2020 issue, available [here](http://aigne.ucc.ie/index.php/aigne/issue/view/173/showToc). 
