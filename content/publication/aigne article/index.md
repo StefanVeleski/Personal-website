@@ -25,7 +25,7 @@ summary: An article exploring the trope of post first contact transformation pre
 
 tags:
 
-title: Crisis and Transformation: The Aftermath of First Contact in Three Mid-20th Century Science Fiction Novels 
+title: "Crisis and Transformation: The Aftermath of First Contact in Three Mid-20th Century Science Fiction Novels" 
 url_code: ''
 url_dataset: ''
 url_pdf: 'http://aigne.ucc.ie/index.php/aigne/article/view/1552/1518'
