@@ -8,7 +8,7 @@ links:
 - icon: researchgate
   icon_pack: ai
   name: Follow on Research Gate
-  url: https://researchgate.net
+  url: https://www.researchgate.net/project/Cultural-longevity-and-success
 slides:
 summary: Why do some cultural products linger in our collective memory longer than others?
 tags:

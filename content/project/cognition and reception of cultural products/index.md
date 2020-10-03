@@ -8,7 +8,7 @@ links:
 - icon: researchgate
   icon_pack: ai
   name: Follow on Research Gate
-  url: https://researchgate.net
+  url: https://www.researchgate.net/project/Cognition-and-the-reception-of-cultural-products
 slides: 
 summary: How do cultural and biological factors influence our consumption of cultural products?
 tags:

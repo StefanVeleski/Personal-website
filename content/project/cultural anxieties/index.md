@@ -8,7 +8,7 @@ links:
 - icon: researchgate
   icon_pack: ai
   name: Follow on Research Gate
-  url: https://researchgate.net
+  url: https://www.researchgate.net/project/Cultural-anxieties-in-cultural-production
 slides: 
 summary: What do cultural evolution and biocultural criticism have to say about the effect of cultural phenomena on cultural production?
 tags:
