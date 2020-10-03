@@ -54,4 +54,4 @@ user_groups:
 - Visitors
 ---
 
-I am a doctoral student in English literature at the department of English and American Studies at Masaryk University. My dissertation research deals with the factors behind the divergent cultural longevity of late Victorian novels, with a focus on bestsellers and canonical novels. I am also interested in other applications of cultural evolution and biocultural criticism on all kinds of cultural products, ranging from "creepypasta" to Starcraft2. This website will feature some of my attempts to cast some light on these aspects of contemporary popular culture. 
+I am a doctoral student in English literature at the department of English and American Studies at Masaryk University. My dissertation research deals with the factors behind the divergent cultural longevity of late Victorian novels, with a focus on bestsellers and canonical novels. I am also interested in other applications of cultural evolution and biocultural criticism on all kinds of cultural products, ranging from "creepypasta" to Starcraft 2. This website will feature some of my attempts to cast some light on these aspects of contemporary popular culture. 
