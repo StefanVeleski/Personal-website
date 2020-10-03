@@ -7,7 +7,7 @@ date: "2020-09-30T00:00:00Z"
 doi: ""
 featured: false
 image:
-  caption: 'Image by Kei Rothblack from Pixabay'
+  caption: ''
   focal_point: ""
   preview_only: false
 links:
