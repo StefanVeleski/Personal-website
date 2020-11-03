@@ -21,7 +21,7 @@ publication_types:
 - "1"
 publishDate: "2020-11-02T00:00:00Z"
 slides:
-summary: A conference paper testing the hypothesis that negativity bias has caused late Victorian novels with lower mean emotional valence to have higher cultural longevity. The hypothesis is confirmed, but the effect is weak - R=-0.087, p=0.038. 
+summary: A conference paper testing the hypothesis that negativity bias has caused late Victorian novels with lower mean emotional valence to have higher cultural longevity. The hypothesis is confirmed, but the effect is weak (R=-0.087, p=0.038). 
 
 tags:
 
