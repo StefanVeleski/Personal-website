@@ -21,14 +21,14 @@ publication_types:
 - "2"
 publishDate: "2020-11-02T00:00:00Z"
 slides:
-summary: A conference paper exploring the trope of post first contact transformation prevalent in mid twentieth century science fiction. The article uses a mixed method of close reading and sentiment analysis, guided by insight from cultural evolution and biocultural criticism.
+summary: A conference paper testing the hypothesis that negativity bias has caused late Victorian novels with lower mean emotional valence to have higher cultural longevity. The hypothesis is confirmed, but the effect is weak, R=-0.087, p=0.038. 
 
 tags:
 
-title: "Crisis and Transformation: The Aftermath of First Contact in Three Mid-20th Century Science Fiction Novels" 
+title: "Weak Negative Correlation between the Present Day Popularity and the Mean Emotional Valence of Late Victorian Novels" 
 url_code: ''
 url_dataset: ''
-url_pdf: 'Weak Negative Correlation between the Present Day Popularity and the Mean Emotional Valence of Late Victorian Novels'
+url_pdf: 'http://ceur-ws.org/Vol-2723/long44.pdf'
 url_poster: ''
 url_project: ""
 url_slides: ""
