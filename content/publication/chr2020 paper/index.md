@@ -26,7 +26,7 @@ summary: A conference paper testing the hypothesis that negativity bias has caus
 tags:
 
 title: "Weak Negative Correlation between the Present Day Popularity and the Mean Emotional Valence of Late Victorian Novels" 
-url_code: ''
+url_code: 'https://github.com/StefanVeleski/CHR2020-project'
 url_dataset: ''
 url_pdf: 'http://ceur-ws.org/Vol-2723/long44.pdf'
 url_poster: ''
