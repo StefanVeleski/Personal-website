@@ -23,12 +23,12 @@ math: true
 projects:
 - Dissertation project
 publishDate: "2020-11-08T00:00:00Z"
-slides: 
+slides: "content/talk/navigating extremistan/Presentation.pdf"
 summary: This paper argues that the inequality of the present day popularity enjoyed by the two novels is the result of small differences of literary quality, which were amplified by the dynamics of the market. The paper investigates both intratextual (e.g. the formal features of the texts, the presence of certain topics of contemporary interest) and extratextual aspects (e.g. the different fortunes of their adaptations in early cinema, the advertising strategies of their publishers) that might have contributed to the divergent cultural longevity of these two novels.
 tags: ""
 title: "Navigating 'Extremistan': Tracing the Factors behind the Divergent Cultural Longevity of Dracula and The Beetle"
 url_code: "https://github.com/StefanVeleski/In-Outside-the-Frame-project"
 url_pdf: ""
-url_slides: "https://www.slideshare.net/secret/eZAUiOMlYRfcKs"
+url_slides: ""
 url_video: ""
 ---
