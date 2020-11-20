@@ -9,7 +9,7 @@ address:
   street: 
 all_day: true
 authors:
-date: "2020-11-19T13:00:00Z"
+date: "2020-11-18T13:00:00Z"
 date_end: "2019-11-20T15:00:00Z"
 event: Computational Humanities Research 2020
 event_url: https://www.computational-humanities-research.org/
