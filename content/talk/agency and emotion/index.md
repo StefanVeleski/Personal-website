@@ -9,9 +9,9 @@ address:
   street: 
 all_day: true
 authors:
-date: "2020-11-26T13:00:00Z"
-date_end: "2020-11-27T15:00:00Z"
-event: 'Agency and Emotion': New and Emerging Work in Nineteenth Century Studies
+date: "2020-11-26T00:00:00Z"
+date_end: "2020-11-27T00:00:00Z"
+event: "Agency and Emotion: New and Emerging Work in Nineteenth Century Studies"
 event_url: https://www.dur.ac.uk/cncs/events/?eventno=47307
 featured: false
 image:
