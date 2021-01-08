@@ -20,7 +20,7 @@ publication_types:
 - "2"
 publishDate: "2021-01-08T00:00:00Z"
 slides:
-summary: A review of Acerbi's groundbreaking book, which summarizes the main arguments in the book and weighs its potential to impact media and cultural studies.
+summary: A review that summarizes the main arguments in Acerbi's book and weighs its potential to impact media and cultural studies.
 tags:
 
 title: Review of Cultural Evolution in the Digital Age, by Alberto Acerbi 
