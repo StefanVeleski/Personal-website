@@ -15,4 +15,4 @@ weight = 60
 
 +++
 
-My CV is available [here](/media/cv.pdf). (Last updated: December 01, 2020)
+My CV is available [here](/media/cv.pdf). (Last updated: February 26, 2021)
