@@ -1,0 +1,236 @@
+---
+title: "TEST"
+author: "Stefan Veleski"
+date: "5/19/2021"
+output:
+  html_document:
+    toc: TRUE
+    toc_float: TRUE
+    toc_depth: 4
+    theme: journal
+    df_print: paged
+editor_options:
+  markdown:
+    wrap: 72
+runtime: shiny
+---
+
+<script src="TEST SHINY RMD_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="section-tidytext-sentiment-analysis" class="section level1">
+<h1>Tidytext sentiment analysis</h1>
+<div id="section-importing-and-wrangling-the-data" class="section level2">
+<h2>Importing and wrangling the data</h2>
+<p>Let’s start off by loading in the necessary packages</p>
+<pre class="r"><code>library(tidyverse)
+library(syuzhet)
+library(gutenbergr)
+library(tidytext)
+library(textdata)
+library(shiny)</code></pre>
+<p>Now let’s download metadata for Hardy’s works and manually select all novels (metadata
+about this not included on Project Gutenberg).</p>
+<pre class="r"><code>hardy_meta &lt;- gutenberg_works(author == &quot;Hardy, Thomas&quot;) 
+hardy_meta &lt;- hardy_meta %&gt;% 
+  slice(c(1,2,3,4,5,6,7,8,10,11,13,18,22,23,24))</code></pre>
+<p>This does the same for Austen’s works.</p>
+<pre class="r"><code>austen_meta &lt;- gutenberg_works(author == &quot;Austen, Jane&quot;) 
+austen_meta &lt;- austen_meta %&gt;%  
+  slice(1:8)</code></pre>
+<p>Now let’s download all of Hardy’s and Austen’s texts, and retain a column with the titles of the novels.</p>
+<pre class="r"><code>hardy_tidy_texts &lt;- gutenberg_download(hardy_meta$gutenberg_id, 
+                                  meta_fields = &quot;title&quot;) 
+
+austen_tidy_texts &lt;- gutenberg_download(austen_meta$gutenberg_id,
+                                  meta_fields = &quot;title&quot;)</code></pre>
+</div>
+<div id="section-tokenizing-the-text-by-individual-words" class="section level2">
+<h2>Tokenizing the text by individual words</h2>
+<p>The following code tokenizes the full text by individual words, but also provides additional metadata about the line and the chapter that the word is located in</p>
+<pre class="r"><code>austen_tidy_texts &lt;- austen_tidy_texts %&gt;%
+  group_by(title) %&gt;%
+  mutate(
+    linenumber = row_number(),
+    chapter = cumsum(str_detect(
+      text, # cumulative sum, detect string, column analyzed
+      regex(&quot;^chapter [\\divxlc]&quot;, # regular expression, chapter any char
+        ignore_case = TRUE # include both lower and uppercase
+      )
+    ))
+  ) %&gt;% 
+  ungroup() %&gt;% # removing the grouping by title set up above
+  unnest_tokens(word, text) # tokenization of the text column by word (word per row)
+
+nrc_joy &lt;- get_sentiments(&quot;nrc&quot;) %&gt;% # tidy text function that extracts the values of 3 sentiment lexicons - AFINN, bing, loughran (mostly used for finance related use cases) and nrc
+  filter(sentiment == &quot;joy&quot;) # out of the 8 general emotions that the nrc contains, this filters only joy</code></pre>
+<p>The “Text Mining With R” book uses the janeaustenr package, which is not really
+necessary, as we can represent the full workflow from downloading
+the books to visualization, which can be used with books from other authors as well.</p>
+</div>
+<div id="section-most-common-words-associated-with-the-nrc-emotion-joy" class="section level2">
+<h2>Most common words associated with the NRC emotion “joy”</h2>
+<p>The code below simply counts the most common words in Persuasion that correspond to the joy emotion in the NRC sentiment lexicon</p>
+<pre class="r"><code>austen_tidy_texts %&gt;%
+  filter(title == &quot;Persuasion&quot;) %&gt;% # only selecting Persuasion from the rest of the books
+  inner_join(nrc_joy) %&gt;% # combining two tables together (see data wrangling cheat sheet)
+  count(word, sort = TRUE) # counting the words</code></pre>
+<pre><code>## # A tibble: 258 x 2
+##    word        n
+##    &lt;chr&gt;   &lt;int&gt;
+##  1 good      187
+##  2 young      84
+##  3 found      83
+##  4 friend     77
+##  5 present    65
+##  6 happy      64
+##  7 hope       53
+##  8 deal       45
+##  9 love       42
+## 10 spirits    41
+## # ... with 248 more rows</code></pre>
+</div>
+<div id="section-the-sentiment-plots-of-each-of-austens-novels" class="section level2">
+<h2>The sentiment plots of each of Austen’s novels</h2>
+<pre class="r"><code>jane_austen_sentiment &lt;- austen_tidy_texts %&gt;%
+  inner_join(get_sentiments(&quot;bing&quot;)) %&gt;% # 
+  count(title, index = linenumber %/% 80, sentiment) %&gt;%
+  pivot_wider(names_from = sentiment, values_from = n, values_fill = 0) %&gt;% 
+  mutate(sentiment = positive - negative)
+
+ggplot(jane_austen_sentiment, aes(index, sentiment, fill = title)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~title, ncol = 2, scales = &quot;free_x&quot;)</code></pre>
+<p><img src="/posts/TEST/TEST%20SHINY%20RMD_files/figure-html/The%20sentiment%20plots%20of%20each%20of%20Austens%20novels-1.png" width="672" /></p>
+</div>
+<div id="section-the-top-ten-most-positive-and-most-negative-words-in-austens-work" class="section level2">
+<h2>The top ten most positive and most negative words in Austen’s work</h2>
+<pre class="r"><code>bing_word_counts &lt;- austen_tidy_texts %&gt;%
+  inner_join(get_sentiments(&quot;bing&quot;)) %&gt;% #retain only words that exist in both 
+  count(word, sentiment, sort = TRUE) %&gt;% 
+  ungroup()
+
+bing_word_counts %&gt;%
+  group_by(sentiment) %&gt;%
+  slice_max(n, n = 10) %&gt;%  # slice n to retain top 10
+  ungroup() %&gt;%
+  mutate(word = reorder(word, n)) %&gt;%
+  ggplot(aes(n, word, fill = sentiment)) + # n x axis, word y axis, color according to sentiment
+  geom_col(show.legend = FALSE) + # barplot, no legends
+  facet_wrap(~sentiment, scales = &quot;free_y&quot;) + # facet wrapped along sentiment, free y scale
+  labs(x = &quot;Contribution to sentiment&quot;, # x label
+       y = NULL) # no y label</code></pre>
+<p><img src="/posts/TEST/TEST%20SHINY%20RMD_files/figure-html/The%20top%20ten%20most%20positive%20and%20most%20negative%20words%20in%20Austens%20work-1.png" width="672" /></p>
+<p>Adding miss as a custom stopword to the stopwords lexicon contained in the tidytext package
+This will be removed from the visualization later on.</p>
+<pre class="r"><code>custom_stop_words &lt;- bind_rows(tibble(word = c(&quot;miss&quot;),  
+                                      lexicon = c(&quot;custom&quot;)), 
+                               stop_words)</code></pre>
+</div>
+</div>
+<div id="section-sentiment-wordcloud" class="section level1">
+<h1>Sentiment wordcloud</h1>
+<p>This visualization uses the same package as the wordcloud visualization in week 7, but here the
+words are ordered according to their sentiment in addition to their frequency.</p>
+<pre class="r"><code>library(wordcloud)
+library(reshape2)
+
+set.seed(1234) # reproducibility
+
+austen_tidy_texts %&gt;%
+  anti_join(custom_stop_words) %&gt;% # remove all words that have a match in custom_stop_words
+  inner_join(get_sentiments(&quot;bing&quot;)) %&gt;% # retain only words that exist in both 
+  count(word, sentiment, sort = TRUE) %&gt;% #
+  acast(word ~ sentiment, value.var = &quot;n&quot;, fill = 0) %&gt;%
+  comparison.cloud(colors = c(&quot;brown1&quot;, &quot;cyan3&quot;),
+                   max.words = 150, # maximum number of words in the visualization
+                   scale = c(2.5, 0.05), # largest and smallest words in the word cloud
+                   min.freq = 1, # minimal frequency of the words in the visualizaion
+                   random.order = FALSE, # no random order, size dictated by frequency
+                rot.per = 0.35) # percentage of words rotated (35%)</code></pre>
+<p><img src="/posts/TEST/TEST%20SHINY%20RMD_files/figure-html/Sentiment%20wordcloud-1.png" width="672" /></p>
+</div>
+<div id="section-syuzhet-package" class="section level1">
+<h1>Syuzhet package</h1>
+<p>The syuzhet package is one of the more popular specialized sentiment analysis packages. You can use the bing, afinn, nrc, and syuzhet sentiment lexicons with this package.</p>
+<p>Let’s first load the required packages and download Austen novels from scratch, so that we have a clean slate.</p>
+<pre class="r"><code>library(zoo)
+library(syuzhet)
+
+austen_tidy_texts &lt;- gutenbergr::gutenberg_download(austen_meta$gutenberg_id,
+                                        meta_fields = &quot;title&quot;)</code></pre>
+<p>We will apply the syuzhet package on a single novel (Persuasion), and in order to properly use the package, we will need to transform the text into a single character string.</p>
+<pre class="r"><code>persuasion_tidy &lt;- austen_tidy_texts %&gt;% #this extracts only the text of Persuasion
+  filter(title == &quot;Persuasion&quot;)
+
+persuasion_string &lt;- paste(persuasion_tidy$text, collapse = &quot; &quot;) # Extracting the text column as 
+#character string
+
+persuasion_sentences &lt;- tolower(get_sentences(persuasion_string)) # Extract sentences &amp; lowercase
+
+persuasion_sentiment &lt;- get_sentiment(persuasion_sentences, method = &quot;syuzhet&quot;) # Get sentiment for each sentence</code></pre>
+<p>The following code produces the first plot.</p>
+<pre class="r"><code>pwdw &lt;- round(length(persuasion_sentiment)*.1) 
+persuasion_rolled &lt;- rollmean(persuasion_sentiment, k=pwdw) #moving/rolling average (1/10 window)
+persuasion_list &lt;- rescale_x_2(persuasion_rolled) # rescaled so another novel can be compared
+plot(persuasion_list$x, 
+     persuasion_list$z, 
+     type=&quot;l&quot;, # line plot
+     main =&quot;Persuasion Plot Trajectory&quot;, # title
+     col=&quot;black&quot;, # color of the line
+     xlab=&quot;Narrative Time&quot;, # 
+     ylab=&quot;Emotional Valence&quot;) #This is almost perfect, but it&#39;s not smoothed out just right. </code></pre>
+<p><img src="/posts/TEST/TEST%20SHINY%20RMD_files/figure-html/First%20syuzhet%20plot-1.png" width="672" /></p>
+<p>I am not entirely satisfied with the appearance though, and I prefer the approach of dividing the novel into 100 equal chunks, and then plotting the mean sentiment of each chunk.</p>
+<pre class="r"><code>persuasion_sample &lt;- seq(1, length(persuasion_list$x),  
+                         by=round(length(persuasion_list$x)/100)) # Taking 100 equal chunks of the text
+plot(persuasion_list$x[persuasion_sample], 
+     persuasion_list$z[persuasion_sample],
+     type=&quot;l&quot;, # line plot
+     lwd = 2, # line width
+     main = &quot;Persuasion Plot Trajectory&quot;,# title
+     col=&quot;black&quot;, # color of the line
+     xlab=&quot;Narrative Time&quot;,#x axis name
+     ylab=&quot;Emotional Valence&quot;,#y axis name
+)</code></pre>
+<p><img src="/posts/TEST/TEST%20SHINY%20RMD_files/figure-html/Second%20syuzhet%20plot-1.png" width="672" /></p>
+</div>
+<div id="section-package-of-the-week---sentimentr" class="section level1">
+<h1>Package of the week - Sentimentr</h1>
+<p>A sentiment analysis package that is more sophisticated in several ways than both tidytext and syuzhet, because it takes valence shifters into consideration.</p>
+<pre class="r"><code>library(sentimentr)
+library(magrittr)
+
+austen_sentiment &lt;- austen_tidy_texts %&gt;%  
+  mutate(sentences = get_sentences(text)) %$%
+  sentiment_by(sentences, title)
+
+hardy_sentiment &lt;- hardy_tidy_texts %&gt;% 
+  mutate(sentences = get_sentences(text)) %$%
+  sentiment_by(sentences, title)
+
+author_column &lt;- factor(c(&quot;Austen&quot;,&quot;Austen&quot;,&quot;Austen&quot;,&quot;Austen&quot;,&quot;Austen&quot;,&quot;Austen&quot;,&quot;Austen&quot;,&quot;Austen&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;,&quot;Hardy&quot;))</code></pre>
+<pre class="r"><code>hardy_vs_austen &lt;- rbind(austen_sentiment, hardy_sentiment)
+
+hardy_vs_austen &lt;- hardy_vs_austen %&gt;% 
+  cbind(author_column)</code></pre>
+<p>The resulting dataframe is an ideal use case for a boxplot/violin plot visualization. Let’s use
+the ggstatsplot package we used in week 5.</p>
+<pre class="r"><code>library(ggstatsplot)
+options(scipen = 10000)
+
+hardy_vs_austen_plot &lt;- ggbetweenstats( 
+  data = hardy_vs_austen, # data
+  x = author_column, # data for x axis
+  y = ave_sentiment, # data for y axis
+  title = &quot;Comparison of the mean sentiment of Hardy&#39;s and Austen&#39;s novels&quot;, # Title
+  xlab = &quot;Author&quot;, # x axis label
+  ylab = &quot;Sentiment&quot; # y axis label
+)
+hardy_vs_austen_plot</code></pre>
+<p><img src="/posts/TEST/TEST%20SHINY%20RMD_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+<div id="section-shiny-interactive-element" class="section level1">
+<h1>Shiny interactive element</h1>
+<p><iframe data-deferred-src="appf19611a10ae9580e69454b2f3a5309a1/?w=&amp;__subapp__=1" width="100%" height="550" class="shiny-frame shiny-frame-deferred"></iframe></p>
+</div>
