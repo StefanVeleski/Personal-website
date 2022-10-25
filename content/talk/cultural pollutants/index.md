@@ -11,11 +11,7 @@ authors:
 date: "2019-08-14T13:00:00Z"
 date_end: "2019-08-16T15:00:00Z"
 event: Research Data and the Humanities
-<<<<<<< HEAD
-event_url: "https://www.kielipankki.fi/rdhum-2019"
-=======
-event_url: https://www.oulu.fi/suomenkieli/node/55261
->>>>>>> parent of b2666a1 (Updated dead links in presentations section)
+event_url: https://www.kielipankki.fi/rdhum-2019
 featured: false
 image:
   caption: 'Image by Ivana Divišová from Pixabay'

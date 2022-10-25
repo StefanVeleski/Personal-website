@@ -12,11 +12,7 @@ authors:
 date: "2020-11-18T13:00:00Z"
 date_end: "2020-11-20T15:00:00Z"
 event: Computational Humanities Research 2020
-<<<<<<< HEAD
-event_url: "https://2020.computational-humanities-research.org"
-=======
-event_url: https://www.computational-humanities-research.org/
->>>>>>> parent of b2666a1 (Updated dead links in presentations section)
+event_url: https://2020.computational-humanities-research.org
 featured: false
 image:
   caption: 
