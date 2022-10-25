@@ -12,7 +12,7 @@ authors:
 date: "2020-11-26T00:00:00Z"
 date_end: "2020-11-27T00:00:00Z"
 event: "Agency and Emotion: New and Emerging Work in Nineteenth Century Studies"
-event_url: https://www.dur.ac.uk/cncs/events/?eventno=47307
+event_url: https://www.academia.edu/44614785/Agency_and_Emotion_New_and_Emerging_Work_in_Nineteenth_Century_Studies
 featured: false
 image:
   caption: Image by Prawny from Pixabay
