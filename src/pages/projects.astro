@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { projects } from '../data/projects';
+---
+<Base title="Projects" description="Documentation-engineering work: TypeScript tooling, autotests, Vale automation, and reference tooling.">
+  <header class="mb-12">
+    <p class="font-mono text-xs uppercase tracking-widest text-accent">Projects</p>
+    <h1 class="mt-3 text-3xl font-bold sm:text-4xl">Docs engineering</h1>
+    <p class="mt-4 max-w-2xl text-muted">
+      The tooling, automation, and tests I build to make technical documentation faster to
+      write, easier to maintain, and harder to break.
+    </p>
+  </header>
+
+  <div class="grid gap-4 sm:grid-cols-2">
+    {projects.map((project) => <ProjectCard project={project} />)}
+  </div>
+</Base>

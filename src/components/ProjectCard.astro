@@ -1,0 +1,16 @@
+---
+import type { Project } from '../data/projects';
+interface Props {
+  project: Project;
+}
+const { project } = Astro.props;
+---
+<article class="group rounded-lg border border-border bg-surface p-5 transition-colors hover:border-accent">
+  <h3 class="text-base font-semibold">{project.title}</h3>
+  <p class="mt-2 text-sm leading-relaxed text-muted">{project.summary}</p>
+  <ul class="mt-4 flex flex-wrap gap-1.5">
+    {project.tags.map((t) => (
+      <li class="rounded border border-border px-2 py-0.5 font-mono text-xs text-muted">{t}</li>
+    ))}
+  </ul>
+</article>

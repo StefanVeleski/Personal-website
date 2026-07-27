@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+
+const skills: { group: string; items: string }[] = [
+  { group: 'Languages & scripting', items: 'R, Python, PowerShell' },
+  { group: 'Docs & DocOps', items: 'Vale, hunspell, Markdown, Help+Manual, Snagit' },
+  { group: 'Markup', items: 'Markdown, HTML, CSS, XML, LaTeX' },
+  { group: 'APIs', items: 'REST API, JSON, YAML, Postman' },
+  { group: 'CI/CD & VCS', items: 'Git, TFS, TeamCity, Azure DevOps' },
+  { group: 'Virtualization', items: 'vSphere, Hyper-V, Docker' },
+  { group: 'Tooling', items: 'TypeScript editor, VS Code, GitHub, GitLab, Jira, Confluence' },
+];
+
+const education = [
+  { degree: 'PhD, English Literature (Digital Humanities)', org: 'Masaryk University', year: '2022' },
+  { degree: 'MA, English Language & Literature', org: 'Masaryk University', year: '2017' },
+  { degree: 'BA, English Language & Literature', org: 'Ss. Cyril and Methodius University', year: '2014' },
+];
+
+const languages = 'Macedonian (native), English (C2), Russian (B2), Czech (B1)';
+---
+<Base title="About" description="Stefan Veleski — configuration engineer and technical writer at Veeam, with a digital-humanities research background.">
+  <header class="mb-10">
+    <p class="font-mono text-xs uppercase tracking-widest text-accent">About</p>
+    <h1 class="mt-3 text-3xl font-bold sm:text-4xl">Hi, I'm Stefan.</h1>
+  </header>
+
+  <div class="prose">
+    <p>
+      I'm a <strong>configuration engineer</strong> at <strong>Veeam</strong> in Prague,
+      where I build the tooling and automation that a documentation team relies on —
+      automating publishing workflows, writing autotests that keep the docs correct, and
+      maintaining a custom TypeScript editor the writers use every day.
+    </p>
+    <p>
+      I got here the long way. I joined Veeam as a junior technical writer and climbed to
+      senior, documenting Veeam Explorers, PowerShell cmdlets, and REST APIs along the way.
+      The more I automated the boring parts — bulk spellchecking with an R + hunspell
+      script, rolling out Vale for linting and style-guide enforcement, generating cleaner
+      API references with Python — the more the work pulled me toward docs engineering.
+    </p>
+    <p>
+      Before industry, I earned a <strong>PhD in the digital humanities</strong>, using
+      computational text analysis and data visualization to study why some novels endure
+      and others fade. That research still shapes how I think: measure things, question the
+      obvious answer, and make the data legible. You can browse it on the
+      <a href="/research">research page</a>.
+    </p>
+    <p>
+      Away from the terminal I read widely, follow science fiction and film, and juggle four
+      languages with varying success.
+    </p>
+  </div>
+
+  <section class="mt-14">
+    <h2 class="mb-5 font-mono text-xs uppercase tracking-widest text-faint">Skills</h2>
+    <dl class="grid gap-x-8 gap-y-4 sm:grid-cols-2">
+      {skills.map((s) => (
+        <div>
+          <dt class="text-sm font-medium">{s.group}</dt>
+          <dd class="mt-0.5 text-sm text-muted">{s.items}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+
+  <section class="mt-14">
+    <h2 class="mb-5 font-mono text-xs uppercase tracking-widest text-faint">Education</h2>
+    <ul class="space-y-3">
+      {education.map((e) => (
+        <li class="grid gap-1 sm:grid-cols-[4rem_1fr] sm:gap-5">
+          <p class="font-mono text-sm text-faint">{e.year}</p>
+          <div>
+            <p class="text-sm font-medium">{e.degree}</p>
+            <p class="text-sm text-muted">{e.org}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+    <p class="mt-6 text-sm text-muted">
+      <span class="font-medium text-fg">Languages:</span> {languages}
+    </p>
+  </section>
+</Base>

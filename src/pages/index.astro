@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '../data/site';
+import { roles } from '../data/experience';
+import { projects } from '../data/projects';
+
+const featuredRoles = roles.filter((r) => r.featured).slice(0, 3);
+const featuredProjects = projects.filter((p) => p.featured);
+---
+<Base>
+  <section class="pb-4">
+    <p class="font-mono text-xs uppercase tracking-widest text-accent">
+      {site.role} · Veeam
+    </p>
+    <h1 class="mt-4 text-4xl font-bold sm:text-5xl">{site.name}</h1>
+    <p class="mt-5 max-w-2xl text-lg leading-relaxed text-muted">{site.intro}</p>
+
+    <div class="mt-8 flex flex-wrap items-center gap-3">
+      <a
+        href={site.cv}
+        class="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm font-medium text-accent-fg transition-opacity hover:opacity-90"
+      >
+        Curriculum Vitae
+      </a>
+      <a
+        href={`mailto:${site.email}`}
+        class="inline-flex items-center gap-2 rounded-md border border-border px-4 py-2 text-sm font-medium transition-colors hover:border-accent"
+      >
+        Get in touch
+      </a>
+      <SocialLinks class="ml-1" />
+    </div>
+  </section>
+
+  <section class="mt-20">
+    <SectionHeading eyebrow="Now" title="What I'm working on" href="/experience" hrefLabel="Full timeline" />
+    <ol class="space-y-6">
+      {featuredRoles.map((role) => (
+        <li class="grid gap-1 sm:grid-cols-[10rem_1fr] sm:gap-6">
+          <p class="font-mono text-xs text-faint sm:pt-1">{role.period}</p>
+          <div>
+            <h3 class="font-semibold">
+              {role.title} <span class="text-muted">· {role.org}</span>
+            </h3>
+            <ul class="mt-2 space-y-1.5">
+              {role.highlights.map((h) => (
+                <li class="flex gap-2 text-sm leading-relaxed text-muted">
+                  <span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent"></span>
+                  <span>{h}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="mt-20">
+    <SectionHeading eyebrow="Work" title="Selected projects" href="/projects" hrefLabel="All projects" />
+    <div class="grid gap-4 sm:grid-cols-2">
+      {featuredProjects.map((project) => <ProjectCard project={project} />)}
+    </div>
+  </section>
+
+  <section class="mt-20 rounded-lg border border-border bg-surface p-6">
+    <h2 class="text-lg font-semibold">Before industry: a research background</h2>
+    <p class="mt-2 text-sm leading-relaxed text-muted">
+      I hold a PhD in English literature with a specialization in the digital humanities —
+      computational text analysis, sentiment analysis, and data visualization. That work
+      lives on as a set of peer-reviewed publications and conference talks.
+    </p>
+    <a
+      href="/research"
+      class="mt-4 inline-flex items-center gap-1.5 font-mono text-xs text-accent hover:underline"
+    >
+      Browse research <Icon name="arrow" size={14} />
+    </a>
+  </section>
+</Base>

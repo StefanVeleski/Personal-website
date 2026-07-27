@@ -1,7 +1,24 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# astro generated types / cache
+.astro/
+
+# environment
+.env
+.env.*
+!.env.example
+
+# private, machine-local Claude context (not checked in)
 CLAUDE.local.md
-public/
-resources/_gen/
+
+# os / editor
+.DS_Store
+Thumbs.db
+
+# logs
+npm-debug.log*
+yarn-error.log*

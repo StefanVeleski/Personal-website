@@ -1,0 +1,20 @@
+---
+import SocialLinks from './SocialLinks.astro';
+import { site } from '../data/site';
+const year = new Date().getFullYear();
+---
+<footer class="mt-24 border-t border-border">
+  <div class="mx-auto flex max-w-3xl flex-col gap-6 px-5 py-10 sm:flex-row sm:items-center sm:justify-between">
+    <div>
+      <p class="font-mono text-sm font-semibold">{site.name}</p>
+      <p class="mt-1 text-sm text-muted">{site.role} · {site.location}</p>
+    </div>
+    <div class="flex flex-col gap-3 sm:items-end">
+      <SocialLinks />
+      <p class="text-xs text-faint">
+        &copy; {year} {site.name}. Built with
+        <a href="https://astro.build" class="underline-offset-2 hover:text-accent hover:underline" target="_blank" rel="noopener">Astro</a>.
+      </p>
+    </div>
+  </div>
+</footer>

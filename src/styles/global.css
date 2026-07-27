@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* Manual dark mode: `dark:` utilities apply under [data-theme="dark"]. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Semantic colors resolve to CSS variables that flip per theme (see below). */
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+
+  --text-xs: 0.78rem;
+}
+
+/* Light theme (default) */
+:root {
+  --bg: #fbfbfa;
+  --surface: #ffffff;
+  --fg: #18181b;
+  --muted: #52525b;
+  --faint: #a1a1aa;
+  --border: #e7e5e4;
+  --accent: #4f46e5;
+  --accent-fg: #ffffff;
+  color-scheme: light;
+}
+
+/* Dark theme */
+:root[data-theme="dark"] {
+  --bg: #0b0b0d;
+  --surface: #141417;
+  --fg: #ededee;
+  --muted: #a1a1aa;
+  --faint: #6b6b74;
+  --border: #26262b;
+  --accent: #818cf8;
+  --accent-fg: #0b0b0d;
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--color-accent) 25%, transparent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Prose defaults for long-form pages (about, blog posts). */
+.prose {
+  max-width: 68ch;
+  line-height: 1.7;
+  color: var(--color-fg);
+}
+.prose p { margin-block: 1em; }
+.prose h2 { margin-block: 1.6em 0.6em; font-size: 1.4rem; font-weight: 650; }
+.prose h3 { margin-block: 1.3em 0.5em; font-size: 1.15rem; font-weight: 650; }
+.prose a {
+  color: var(--color-accent);
+  text-underline-offset: 3px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+.prose ul { margin-block: 1em; padding-left: 1.25em; list-style: disc; }
+.prose li { margin-block: 0.35em; }
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
