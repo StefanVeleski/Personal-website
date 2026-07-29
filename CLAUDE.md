@@ -47,7 +47,7 @@ src/
   components/       # Icon, Nav, Footer, ThemeToggle, SocialLinks, SectionHeading, ProjectCard
   layouts/Base.astro   # <head>/SEO, fonts, no-flash theme init, Nav + main + Footer
   styles/global.css    # Tailwind import, @theme tokens, light/dark CSS variables
-  pages/           # index, about, experience, projects, research, writing/, 404, rss.xml.js
+  pages/           # index, about, experience, projects, research, blog/, 404, rss.xml.js
 public/            # favicon.svg, robots.txt, (cv.pdf — see below)
 ```
 

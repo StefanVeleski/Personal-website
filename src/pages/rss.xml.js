@@ -8,14 +8,14 @@ export async function GET(context) {
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
   return rss({
-    title: `${site.name} — Writing`,
-    description: site.tagline,
+    title: `${site.name} — Blog`,
+    description: 'Home automation, personal finance, side-project apps, and whatever else I’m tinkering with.',
     site: context.site,
     items: posts.map((post) => ({
       title: post.data.title,
       description: post.data.description,
       pubDate: post.data.date,
-      link: `/writing/${post.id}/`,
+      link: `/blog/${post.id}/`,
     })),
   });
 }

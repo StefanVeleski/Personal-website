@@ -30,10 +30,17 @@ export const socials: SocialLink[] = [
   },
 ];
 
+// Research profiles surfaced as text links (no clean small-size icon exists for these).
+export const researchProfiles = [
+  { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=Jxie_8gAAAAJ' },
+  { label: 'ORCID', href: 'https://orcid.org/0000-0002-6097-0864' },
+  { label: 'ResearchGate', href: 'https://www.researchgate.net/profile/Stefan-Veleski' },
+];
+
 export const nav = [
   { label: 'About', href: '/about' },
   { label: 'Experience', href: '/experience' },
   { label: 'Projects', href: '/projects' },
-  { label: 'Writing', href: '/writing' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Research', href: '/research' },
 ];
