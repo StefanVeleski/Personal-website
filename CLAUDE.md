@@ -85,12 +85,11 @@ npm run check    # astro check — TS + content schema validation
 
 ## Known follow-ups
 
-- **`public/cv.pdf` is intentionally absent.** `site.cv` is `null`, which hides the home
-  "Curriculum Vitae" button. Stefan's industry CV lives in the private `Personal` repo and
-  prints a home address + phone; a redaction decision is pending. Add a (redacted) `cv.pdf`
-  to `public/` and set `site.cv = '/cv.pdf'` to show the button.
-- Configuration Engineer **start month** in `src/data/experience.ts` is approximate
-  (`2026 — Present`); confirm and adjust the Senior TW end date to match.
+- **`public/cv.pdf` is the public CV** — no street address or phone. It is built from
+  `cv-public.tex` in the private `Personal` repo (`CV/Stefan_CV__industry_/`), which inputs
+  `cv.tex` with `\publicversion` defined. Rebuild with MiKTeX (`xelatex` → `biber` →
+  `xelatex` ×2) and copy `cv-public.pdf` here as `cv.pdf`. Setting `site.cv` to `null`
+  hides the home CV button.
 - No `og.png` yet — social-share cards render without an image until one is added and passed
   to `Base`'s `image` prop.
 
