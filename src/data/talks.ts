@@ -38,7 +38,7 @@ export const talks: Talk[] = [
       'Testing the hypothesis that negativity bias has given late Victorian novels with lower mean emotional valence higher cultural longevity. The effect is confirmed but weak (R=-0.087, p=0.038).',
     links: [
       { label: 'Video', href: 'https://www.youtube.com/watch?v=n9fmLdhZbR8' },
-      { label: 'PDF', href: 'http://ceur-ws.org/Vol-2723/long44.pdf' },
+      { label: 'PDF', href: 'https://ceur-ws.org/Vol-2723/long44.pdf' },
       { label: 'Code', href: 'https://github.com/StefanVeleski/CHR2020-project' },
     ],
   },

@@ -11,14 +11,12 @@ export interface Role {
 
 // Career timeline, newest first. Sourced from the industry CV; all writing/engineering
 // roles are at Veeam (Prague).
-// TODO(stefan): confirm the Configuration Engineer start month and adjust the Senior
-// Technical Writer end date to match (currently both sit in 2026).
 export const roles: Role[] = [
   {
     title: 'Configuration Engineer',
     org: 'Veeam',
     location: 'Prague, Czechia',
-    period: '2026 — Present',
+    period: 'May 2026 — Present',
     current: true,
     featured: true,
     highlights: [
@@ -31,7 +29,7 @@ export const roles: Role[] = [
     title: 'Senior Technical Writer',
     org: 'Veeam',
     location: 'Prague, Czechia',
-    period: 'Apr 2026 — 2026',
+    period: 'Apr 2026 — May 2026',
     featured: true,
     highlights: [
       'Built an R script for bulk spellchecking on top of the hunspell library.',

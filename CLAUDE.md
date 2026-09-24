@@ -85,10 +85,10 @@ npm run check    # astro check — TS + content schema validation
 
 ## Known follow-ups
 
-- **`public/cv.pdf` is intentionally absent.** The home "Curriculum Vitae" button links to
-  `/cv.pdf`. Stefan's industry CV lives in the private `Personal` repo and prints a home
-  address + phone; a redaction decision is pending. Add a (redacted) `cv.pdf` to `public/`
-  to activate the link, or point `site.cv` elsewhere.
+- **`public/cv.pdf` is intentionally absent.** `site.cv` is `null`, which hides the home
+  "Curriculum Vitae" button. Stefan's industry CV lives in the private `Personal` repo and
+  prints a home address + phone; a redaction decision is pending. Add a (redacted) `cv.pdf`
+  to `public/` and set `site.cv = '/cv.pdf'` to show the button.
 - Configuration Engineer **start month** in `src/data/experience.ts` is approximate
   (`2026 — Present`); confirm and adjust the Senior TW end date to match.
 - No `og.png` yet — social-share cards render without an image until one is added and passed

@@ -20,15 +20,22 @@ const featuredProjects = projects.filter((p) => p.featured);
     <p class="mt-5 max-w-2xl text-lg leading-relaxed text-muted">{site.intro}</p>
 
     <div class="mt-8 flex flex-wrap items-center gap-3">
-      <a
-        href={site.cv}
-        class="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm font-medium text-accent-fg transition-opacity hover:opacity-90"
-      >
-        Curriculum Vitae
-      </a>
+      {site.cv && (
+        <a
+          href={site.cv}
+          class="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm font-medium text-accent-fg transition-opacity hover:opacity-90"
+        >
+          Curriculum Vitae
+        </a>
+      )}
       <a
         href={`mailto:${site.email}`}
-        class="inline-flex items-center gap-2 rounded-md border border-border px-4 py-2 text-sm font-medium transition-colors hover:border-accent"
+        class:list={[
+          'inline-flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium',
+          site.cv
+            ? 'border border-border transition-colors hover:border-accent'
+            : 'bg-accent text-accent-fg transition-opacity hover:opacity-90',
+        ]}
       >
         Get in touch
       </a>
@@ -37,7 +44,7 @@ const featuredProjects = projects.filter((p) => p.featured);
   </section>
 
   <section class="mt-20">
-    <SectionHeading eyebrow="Now" title="What I'm working on" href="/experience" hrefLabel="Full timeline" />
+    <SectionHeading eyebrow="Career" title="Recent roles" href="/experience" hrefLabel="Full timeline" />
     <ol class="space-y-6">
       {featuredRoles.map((role) => (
         <li class="grid gap-1 sm:grid-cols-[10rem_1fr] sm:gap-6">

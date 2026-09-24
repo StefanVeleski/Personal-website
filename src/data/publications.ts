@@ -48,8 +48,8 @@ export const publications: Publication[] = [
     summary:
       'A conference paper testing the hypothesis that negativity bias has given late Victorian novels with lower mean emotional valence higher cultural longevity. The effect is confirmed but weak (R=-0.087, p=0.038).',
     links: [
-      { label: 'PDF', href: 'http://ceur-ws.org/Vol-2723/long44.pdf' },
-      { label: 'Proceedings', href: 'http://ceur-ws.org/Vol-2723/' },
+      { label: 'PDF', href: 'https://ceur-ws.org/Vol-2723/long44.pdf' },
+      { label: 'Proceedings', href: 'https://ceur-ws.org/Vol-2723/' },
       { label: 'Code', href: 'https://github.com/StefanVeleski/CHR2020-project' },
     ],
     cite: `@inproceedings{veleski2020weak,
@@ -72,8 +72,8 @@ export const publications: Publication[] = [
     summary:
       'An article exploring the trope of post-first-contact transformation in mid-20th-century science fiction, using close reading and sentiment analysis (syuzhet) informed by cultural evolution and biocultural criticism.',
     links: [
-      { label: 'PDF', href: 'http://aigne.ucc.ie/index.php/aigne/article/download/1552/1518' },
-      { label: 'Journal', href: 'http://aigne.ucc.ie/index.php/aigne/article/view/1552' },
+      { label: 'PDF', href: 'https://aigne.ucc.ie/index.php/aigne/article/download/1552/1518' },
+      { label: 'Journal', href: 'https://aigne.ucc.ie/index.php/aigne/article/view/1552' },
       { label: 'DOI', href: 'https://doi.org/10.6084/m9.figshare.13026431' },
     ],
     cite: `@article{veleski2020crisis,

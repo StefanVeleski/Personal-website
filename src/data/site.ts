@@ -15,7 +15,9 @@ export const site = {
   location: 'Prague, Czechia',
   email: 'stefan_veleski@outlook.com',
   url: 'https://stefanveleski.com',
-  cv: '/cv.pdf',
+  // Set to '/cv.pdf' once a redacted CV is in public/ — the home CV button is hidden while
+  // this is null, so it never links to a 404.
+  cv: null as string | null,
 } as const;
 
 export const socials: SocialLink[] = [

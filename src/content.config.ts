@@ -1,5 +1,5 @@
 import { defineCollection } from 'astro:content';
-import { z } from 'astro:schema';
+import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 
 // Blog posts. Currently empty — the collection is ready for the first post.
