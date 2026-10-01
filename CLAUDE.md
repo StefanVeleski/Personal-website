@@ -14,7 +14,9 @@ docs-engineering identity and keeps his academic research as a secondary archive
 
 ## Who Stefan is (keep site copy accurate to this)
 
-- **Configuration Engineer at Veeam** (Prague) — current role. Automates documentation
+- **Configuration Engineer at Veeam** (Prague) — current role. Shown publicly as
+  **"Configuration Engineer (DocOps)"**: official title first, clarifier in parentheses; use
+  this exact form on the site, CV, and LinkedIn. Automates documentation
   workflows, writes autotests, and maintains a custom **TypeScript** editor for the writing
   team.
 - Climbed the Veeam technical-writing ladder: Junior → Technical Writer → Experienced →

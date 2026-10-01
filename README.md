@@ -1,6 +1,6 @@
 # stefanveleski.com
 
-Personal website of **Stefan Veleski** — Configuration Engineer & Technical Writer.
+Personal website of **Stefan Veleski** — Configuration Engineer (DocOps) & Technical Writer.
 
 Built with [Astro](https://astro.build), TypeScript, and Tailwind CSS v4. Deployed on
 Netlify.

@@ -6,12 +6,12 @@ export interface SocialLink {
 
 export const site = {
   name: 'Stefan Veleski',
-  role: 'Configuration Engineer',
-  roleLong: 'Configuration Engineer & Technical Writer',
+  role: 'Configuration Engineer (DocOps)',
+  roleLong: 'Configuration Engineer (DocOps) & Technical Writer',
   tagline:
     'I build the tooling, automation, and tests behind great technical documentation.',
   intro:
-    'Configuration Engineer at Veeam in Prague. I climbed the technical-writing ladder from junior to senior, then moved into docs engineering — automating documentation workflows, writing autotests, and maintaining a custom TypeScript editor for the writing team.',
+    'Configuration Engineer (DocOps) at Veeam in Prague. I climbed the technical-writing ladder from junior to senior, then moved into docs engineering — automating documentation workflows, writing autotests, and maintaining a custom TypeScript editor for the writing team.',
   location: 'Prague, Czechia',
   email: 'stefan_veleski@outlook.com',
   url: 'https://stefanveleski.com',

@@ -13,7 +13,7 @@ export interface Role {
 // roles are at Veeam (Prague).
 export const roles: Role[] = [
   {
-    title: 'Configuration Engineer',
+    title: 'Configuration Engineer (DocOps)',
     org: 'Veeam',
     location: 'Prague, Czechia',
     period: 'May 2026 — Present',
