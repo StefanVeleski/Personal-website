@@ -14,7 +14,7 @@ const { class: className, size = 20 } = Astro.props;
       <a
         href={s.href}
         class="inline-flex h-9 w-9 items-center justify-center rounded-md text-muted transition-colors hover:text-accent"
-        aria-label={s.label}
+        aria-label={s.icon === 'email' ? s.label : `${s.label} (opens in new tab)`}
         rel={s.icon === 'email' ? undefined : 'me noopener'}
         target={s.icon === 'email' ? undefined : '_blank'}
       >

@@ -5,7 +5,8 @@
 <button
   id="theme-toggle"
   type="button"
-  aria-label="Toggle color theme"
+  aria-label="Switch to dark theme"
+  aria-pressed="false"
   class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-border text-muted transition-colors hover:text-fg hover:border-accent"
 >
   <svg class="hidden dark:block" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -18,13 +19,38 @@
 </button>
 
 <script>
+  const root = document.documentElement;
   const btn = document.getElementById('theme-toggle');
+
+  const sync = () => {
+    const dark = root.getAttribute('data-theme') === 'dark';
+    btn?.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+    btn?.setAttribute('aria-pressed', String(dark));
+  };
+
+  const hasStored = () => {
+    try {
+      return localStorage.getItem('theme') !== null;
+    } catch {
+      return false;
+    }
+  };
+
+  sync();
+
   btn?.addEventListener('click', () => {
-    const root = document.documentElement;
     const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
     try {
       localStorage.setItem('theme', next);
     } catch {}
+    sync();
+  });
+
+  // Follow the OS preference until the user makes an explicit choice.
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (hasStored()) return;
+    root.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+    sync();
   });
 </script>

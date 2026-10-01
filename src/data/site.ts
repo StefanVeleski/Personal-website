@@ -23,7 +23,7 @@ export const site = {
 export const socials: SocialLink[] = [
   { label: 'GitHub', href: 'https://github.com/StefanVeleski', icon: 'github' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/stefan-veleski', icon: 'linkedin' },
-  { label: 'Email', href: 'mailto:stefan_veleski@outlook.com', icon: 'email' },
+  { label: 'Email', href: `mailto:${site.email}`, icon: 'email' },
   { label: 'ORCID', href: 'https://orcid.org/0000-0002-6097-0864', icon: 'orcid' },
   {
     label: 'Google Scholar',

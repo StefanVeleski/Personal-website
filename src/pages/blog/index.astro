@@ -8,7 +8,7 @@ const posts = (await getCollection('posts'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 const fmtDate = (d: Date) =>
-  d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 ---
 <Base title="Blog" description="Stefan Veleski's blog — home automation, personal finance, side-project apps, and whatever else I'm tinkering with.">
   <header class="mb-12 flex items-end justify-between gap-4">
@@ -16,9 +16,11 @@ const fmtDate = (d: Date) =>
       <p class="font-mono text-xs uppercase tracking-widest text-accent">Blog</p>
       <h1 class="mt-3 text-3xl font-bold sm:text-4xl">Notes &amp; experiments</h1>
     </div>
-    <a href="/rss.xml" class="shrink-0 text-muted transition-colors hover:text-accent" aria-label="RSS feed">
-      <Icon name="rss" size={18} />
-    </a>
+    {posts.length > 0 && (
+      <a href="/rss.xml" class="shrink-0 text-muted transition-colors hover:text-accent" aria-label="RSS feed">
+        <Icon name="rss" size={18} />
+      </a>
+    )}
   </header>
 
   {posts.length === 0 ? (
@@ -34,7 +36,9 @@ const fmtDate = (d: Date) =>
       {posts.map((post) => (
         <li>
           <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
-            <p class="font-mono text-xs text-faint">{fmtDate(post.data.date)}</p>
+            <p class="font-mono text-xs text-faint">
+              <time datetime={post.data.date.toISOString()}>{fmtDate(post.data.date)}</time>
+            </p>
             {post.data.tags.length > 0 && (
               <ul class="flex flex-wrap gap-x-2">
                 {post.data.tags.map((tag) => (

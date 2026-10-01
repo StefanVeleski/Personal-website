@@ -20,7 +20,7 @@ const earlier = roles.filter((r) => !r.featured);
       <li class="relative">
         <span
           class:list={[
-            'absolute -left-[1.72rem] top-1.5 h-2.5 w-2.5 rounded-full ring-4 ring-bg',
+            'absolute left-[calc(-1.5rem-0.5px)] top-1.5 h-2.5 w-2.5 -translate-x-1/2 rounded-full ring-4 ring-bg',
             role.current ? 'bg-accent' : 'bg-faint',
           ]}
         ></span>

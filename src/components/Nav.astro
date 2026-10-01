@@ -1,6 +1,10 @@
 ---
+import { getCollection } from 'astro:content';
 import { nav } from '../data/site';
 import ThemeToggle from './ThemeToggle.astro';
+
+const hasPosts = (await getCollection('posts')).some((p) => !p.data.draft);
+const items = nav.filter((i) => i.href !== '/blog' || hasPosts);
 
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const isActive = (href: string) =>
@@ -17,7 +21,7 @@ const isActive = (href: string) =>
     <div class="flex items-center gap-1">
       <nav aria-label="Primary" class="hidden md:block">
         <ul class="flex items-center gap-1">
-          {nav.map((item) => (
+          {items.map((item) => (
             <li>
               <a
                 href={item.href}
@@ -36,9 +40,9 @@ const isActive = (href: string) =>
       <ThemeToggle />
     </div>
   </div>
-  <nav aria-label="Primary" class="md:hidden overflow-x-auto border-t border-border">
+  <nav aria-label="Primary mobile" class="md:hidden overflow-x-auto border-t border-border">
     <ul class="flex items-center gap-1 px-4 py-2">
-      {nav.map((item) => (
+      {items.map((item) => (
         <li>
           <a
             href={item.href}

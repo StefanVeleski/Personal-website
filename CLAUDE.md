@@ -90,8 +90,10 @@ npm run check    # astro check — TS + content schema validation
   `cv.tex` with `\publicversion` defined. Rebuild with MiKTeX (`xelatex` → `biber` →
   `xelatex` ×2) and copy `cv-public.pdf` here as `cv.pdf`. Setting `site.cv` to `null`
   hides the home CV button.
-- No `og.png` yet — social-share cards render without an image until one is added and passed
-  to `Base`'s `image` prop.
+- `public/og.png` (1200×630) is the default social-share image; `Base` uses it unless a page
+  passes its own `image` prop. It was rendered once from an SVG with `sharp` — regenerate it
+  by hand if the name/role changes.
+- The Blog nav link and the RSS `<link>` only appear once a non-draft post exists.
 
 ## Conventions
 

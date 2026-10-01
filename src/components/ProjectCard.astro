@@ -5,7 +5,7 @@ interface Props {
 }
 const { project } = Astro.props;
 ---
-<article class="group rounded-lg border border-border bg-surface p-5 transition-colors hover:border-accent">
+<article class="rounded-lg border border-border bg-surface p-5">
   <h3 class="text-base font-semibold">{project.title}</h3>
   <p class="mt-2 text-sm leading-relaxed text-muted">{project.summary}</p>
   <ul class="mt-4 flex flex-wrap gap-1.5">
